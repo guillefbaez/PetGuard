@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: #ffffff;
+}
+
+header{
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #80BFFF;
+}
+
+/*Estilo NavBar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+/*Fin NavBar*/
+
+/*Estilo Logo PetGuard*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+/*Fin Logo PetGuard*/
+
+/*Estilo Menu*/
+.menu{
+    font-family: Inter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Cambia el color según tu preferencia */
+    transition: 0.3s ease;
+    transform: translateY(5px); /* Ajusta la posición vertical del subrayado */
+}
+/*Fin Menu*/
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/*Fin Pie de Pagina*/
+/*Estilo Boton de Inicio de Sesión*/
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.loginbutton{
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*Fin Boton de Inicio de Sesión*/
+
+/*Estilo para Sección Ayuda*/
+main {
+    padding: 60px;
+    padding-top: 40px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+.campo1{
+    
+    justify-content: space-between;
+    float: left;
+    width: 49%;
+    height: 70px;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+.campo2 {
+    margin-bottom: 5%;
+    margin-top: 15px;
+    width: 99%;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px; 
+}
+  
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: 2px solid black;
+}
+  
+.enviar {
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    width: 150px;
+    height: 38px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 400px;
+}
+  
+/*Fin Sección Ayuda*/
+
+

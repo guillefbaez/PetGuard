@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetGuard</title>
-    <link rel="stylesheet" href="CSS/Nosotros1.css">
+    <link rel="stylesheet" href="CSS/Ayuda.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -26,31 +26,36 @@
             </div>
             </nav>
         </header>
-
-    <div class="container-logos">
-            <a href="https://www.uanl.mx/" target="_blank"> 
-                <img class="UANL" src="Images/LogoUANL.png" alt="LogoUANL">
-            </a>
-            <a href="https://www.fime.uanl.mx/" target="_blank">
-                <img class="FIME" src="Images/LogoFIME.png" alt="LogoFIME">
-            </a>
-        </div>
-    <div class="container-Us">
-        <h1>¿Quienes somos?</h1><br>
-        <p>¡Bienvenido a PetGuard! Somos un equipo de apasionados estudiantes de la <b>Facultad de <br> Ingeniería Mecánica y Eléctrica</b> comprometidos con la seguridad y el bienestar de tus <br> mascotas. Nuestra misión es proporcionarte una solución innovadora y práctica para <br> ayudarte a mantener a tus mascotas seguras y protegidas en todo momento.</p>
-    </div>
-
-
-        <button class="btn-flecha">
-            <a href="Nosotros2.html">
-                <img src="Images/FlechaUs.png"  alt="FlechaNext">
-            </a>
-        </button>
-    </div>
+    <main>
+        <form action="#">
+            <div class="campo1">
+                <label for="nombre">Nombre(s)</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+           
+            <div class="campo1">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            
+            <div class="campo2">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+        
+            <div class="campo2">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+        
+            <button class="enviar" type="submit">Enviar</button>
+            </form>
+    </main>
+        
     <footer>
         <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
         <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
-    </footer> 
+    </footer>
     </body>
 </html>
 
