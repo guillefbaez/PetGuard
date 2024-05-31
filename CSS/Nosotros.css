@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-body {
+body{
     font-family: Inter;
-    background-color: #000000;
+    background-color: white;
 }
 
-header {
+header{
     font-family: Inter;
     font-weight: bold;
     background-color: #80BFFF;
@@ -93,49 +93,64 @@ footer {
 }
 /*Fin Boton de Inicio de Sesión*/
 
-/*Estilos Container Banner 3*/
-.container-banner3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+/*Estilos Container Logos*/
+.container-logos{
+    position: relative; /* El contenedor será el elemento de referencia para el posicionamiento absoluto */
+    width: 100%; /* Ajusta el ancho del contenedor al 100% del ancho disponible */
+    height: 300px; /* Define la altura del contenedor (ajústala según tus necesidades) */
 }
-.banner3 img{
-    width: 116%;
-    height: auto;
+.container-logos img{
+    position: absolute; /* Posiciona las imágenes de forma absoluta dentro del contenedor */
+    top: 50%; /* Posiciona las imágenes verticalmente en el 50% de la altura del contenedor */
+    transform: translateY(-50%); /* Compensa la mitad de la altura de la imagen para centrarla verticalmente */
 }
-.texto-banner3{
-    position: absolute;
-    top: 200px;
-    left: 90px;
-    color: white;
+.container-logos img:first-child{
+    left:0;
 }
-.texto-banner3 h1{
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    font-weight: bold;
+.container-logos img:last-child{
+    right:0;
 }
-.texto-banner3 p{
-    font-size: 13px;
+.UANL{
+    padding-left: 40px
+}
+.FIME{
+    padding-left: 750px;
+    padding-bottom: 40px;
+}
+/*Fin Container Logos*/
+
+.containerUs {
+    display: none;
+}
+
+.containerUs-active {
+    display: block;
     align-items: center;
     text-align: center;
 }
-/*Fin Container Banner 3*/
-.btn-flecha3right {
+
+.containerUs-active h1, .containerUs h1 {
+    background-color: #F60;
+    color: white;
+    width: 500px;
+    height: 60px;
+    margin-left: 400px;
+    padding-top: 20px;
+}
+
+.btn-flecha {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 550px;
+    margin-left: 1125px;
+    margin-top: 50px;
 }
 
-.btn-flecha3right img {
-    width: 100px;
+.btn-flecha img {
+    width: 50px;
     height: auto;
 }
-/*Estilo Flecha Banner 3*/
 
-
+.listaIntegrantes {
+    list-style-type: circle;
+}

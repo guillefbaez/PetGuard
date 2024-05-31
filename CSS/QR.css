@@ -93,64 +93,85 @@ footer {
 }
 /*Fin Boton de Inicio de Sesión*/
 
-/*Estilos Container Logos*/
-.container-logos{
-    position: relative; /* El contenedor será el elemento de referencia para el posicionamiento absoluto */
-    width: 100%; /* Ajusta el ancho del contenedor al 100% del ancho disponible */
-    height: 300px; /* Define la altura del contenedor (ajústala según tus necesidades) */
-}
-.container-logos img{
-    position: absolute; /* Posiciona las imágenes de forma absoluta dentro del contenedor */
-    top: 50%; /* Posiciona las imágenes verticalmente en el 50% de la altura del contenedor */
-    transform: translateY(-50%); /* Compensa la mitad de la altura de la imagen para centrarla verticalmente */
-}
-.container-logos img:first-child{
-    left:0;
-}
-.container-logos img:last-child{
-    right:0;
-}
-.UANL{
-    padding-left: 40px
-}
-.FIME{
-    padding-left: 750px;
-    padding-bottom: 40px;
-}
-/*Fin Container Logos*/
-
-/*Estilo Container Us*/
-.container-Us{
-    align-items: center;
+/*Estilos Collar Selector*/
+main {
+    padding: 20px;
+  }
+  
+  .collar-selector {
     text-align: center;
-}
-.container-Us h1{
+  }
+  
+  .title-h1 {
+    font-size: 18px;
     background-color:#F60;
     color: white;
-    width: 500px;
-    height: 60px;
-    margin-left: 400px;
-    padding-top: 20px;
-}
-.listaIntegrantes{
-    list-style-type: circle;
-}
-/*Fin Container Us*/
+    width: 550px;
+    height: 30px;
+    margin-left: 350px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-/*Estilo Flecha*/
-.btn-flecha {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 50px;
+  .collar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 300px;
+    margin-left: 450px;
+    margin-top: 30px;
+  }
+
+  .collar {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.collar-active{
+    display: block;
+}
+
+.arrow-left, .arrow-right {
+  background-color: white;
+  border: none;
+  margin: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content:space-between;
+}
+
+  .collar1Op, .collar2Op, .collar3Op, .collar4Op, .collar5Op{
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    margin: 15px;
     margin-top: 50px;
-}
+    border: 5px solid #000;
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }  
+/*Fin Collar Selector*/
 
-.btn-flecha img {
-    width: 50px;
-    height: auto;
-    rotate: 180deg;
+/*Estilos Botón*/
+.btn-comprar {
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 50px;
+    
 }
-/*Fin Flecha*/
+/*Fin Botón*/
 
 

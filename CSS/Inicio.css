@@ -93,18 +93,12 @@ footer {
 }
 /*Fin Boton de Inicio de Sesión*/
 
-/*Estilos Container Banner 2*/
-.container-banner1{
+/*Estilos Container Banner 1*/
+.banner-active{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
-.banner1 img{
-    width: 115%;
-    height: auto;
+    
 }
 .texto-banner1{
     position: absolute;
@@ -123,18 +117,92 @@ footer {
     text-align: center;
 }
 /*Fin Container Banner 1*/
-.btn-flecha1right {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-right: 20px;
-    margin-top: 550px;
+
+.btn-flechaRight, .btn-flechaLeft{
+background: transparent;
+border: none;
+cursor: pointer;
 }
 
-.btn-flecha1right img {
+.btn-flechaRight img, .btn-flechaLeft img {
     width: 100px;
     height: auto;
 }
+.btn-flechaRight{
+    margin-left: 1100px;
+}
+.banner1 img, .banner2 img{
+    height:700px;
+    width: 1250px;
+}
+.banner3 img{
+    height: 1150px;
+    width: 1250px;
+}
+.banner2, .btn-flechaRight{
+    align-items: end;
+}
+
 /*Estilo Flecha Banner 1*/
 
+/*Estilos Container Banner 2*/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.banner2 img{
+    
+    height: auto;
+}
+.texto-banner2{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    color: white;
+}
+.texto-banner2 h1{
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.texto-banner2 p{
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+/*Fin Container Banner 2*/
 
+/*Estilos Container Banner 3*/
+.banner3 img{
+    
+    height: auto;
+}
+.texto-banner3{
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    color: white;
+}
+.texto-banner3 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.texto-banner3 p{
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+}
+/*Fin Container Banner 3*/
+
+.banner{
+    display: none;
+}
+.banner-active{
+    display: block;
+}

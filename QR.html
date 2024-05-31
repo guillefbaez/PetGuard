@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuard</title>
+    <link rel="stylesheet" href="CSS/QR.css">
+    <script src="JS/QR.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"> <a href="Inicio.html"><img src="Images/LogoPetGuard.jpg" alt="LogoPetGuard"></a></div>
+            <ul class="menu">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="#infomascota">InfoMascota</a></li>
+                <li><a href="QR.html">QR<br>Personalizado</a></li>
+                <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+            <div class="container-login">
+                <img src="Images/LogoUser.png" alt="LogoUser">
+                <button class="loginbutton">INICIAR SESIÓN</button>
+            </div>
+            </nav>
+        </header>
+        <main>
+            <section class="collar-selector">
+              <div class="title-h1">
+                <h1>¡Escoge tu placa personalizada!</h1>
+              </div>
+              <div class="collar-container">
+                <button class="arrow-left" onclick="changeCollar('left')">
+                    <img src="Images/LogoFlechaIzquierda.png" alt="FlechaIzquierda">
+                </button>   
+                <img src="Images/Placa1.png" alt="Collar1" class="collar collar-active" data-index="0">
+                <img src="Images/Placa2.png" alt="Collar2" class="collar" data-index="1">
+                <img src="Images/Placa3.png" alt="Collar3" class="collar" data-index="2">
+                <img src="Images/Placa4.png" alt="Collar4" class="collar" data-index="3">
+                <img src="Images/Placa5.png" alt="Collar5" class="collar" data-index="4">
+                <button class="arrow-right" onclick="changeCollar('right')">
+                    <img src="Images/LogoFlechaDerecha.png" alt="FlechaDerecha">  
+                </button>
+              </div>
+
+              <div class="collar-options">
+                <img src="Images/Placa1.png" alt="Collar1" class="collar1Op">
+                <img src="Images/Placa2.png" alt="Collar2" class="collar2Op">
+                <img src="Images/Placa3.png" alt="Collar3" class="collar3Op">
+                <img src="Images/Placa4.png" alt="Collar4" class="collar4Op">
+                <img src="Images/Placa5.png" alt="Collar5" class="collar5Op">
+          </div>
+
+              
+                <button class="btn-comprar">Pedir placa</button>
+            </section>
+          </main>  
+    <footer>
+        <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+        <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+    </footer>
+    </body>
+</html>
+
