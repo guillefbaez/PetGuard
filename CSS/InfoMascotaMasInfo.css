@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: white;
+}
+
+header{
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #80BFFF;
+}
+
+/*Estilo NavBar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+/*Fin NavBar*/
+
+/*Estilo Logo PetGuard*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+/*Fin Logo PetGuard*/
+
+/*Estilo Menu*/
+.menu{
+    font-family: Inter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Cambia el color según tu preferencia */
+    transition: 0.3s ease;
+    transform: translateY(5px); /* Ajusta la posición vertical del subrayado */
+}
+/*Fin Menu*/
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/*Fin Pie de Pagina*/
+/*Estilo Boton de Inicio de Sesión*/
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.loginbutton{
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*Fin Boton de Inicio de Sesión*/
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    width: 600px;
+    margin-left: 300px;
+    background-color: #F60;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+    width: 60%;
+    margin-top: 70px;
+}
+
+.column {
+    width: 30%;
+}
+
+.column p {
+    font-family: Inter;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 10px 0;
+}
+::placeholder {
+    text-align: center;
+}
+
+#backButton {
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    width: 200px;
+    height: 38px;
+    border-radius: 25px;
+    margin-top: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image img{
+    height: 30px;
+    width: 30px;
+    margin-left: 150px;
+    display: block;
+    justify-content: space-around;
+    
+}

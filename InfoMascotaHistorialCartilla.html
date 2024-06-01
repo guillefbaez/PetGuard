@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuard</title>
+    <script src="JS/HistorialCartilla.js" defer></script>
+    <link rel="stylesheet" href="CSS/InfoMascotaHistorialCartilla.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"> <a href="Inicio.html"><img src="Images/LogoPetGuard.jpg" alt="LogoPetGuard"></a></div>
+            <ul class="menu">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="InfoMascota.html">InfoMascota</a></li>
+                <li><a href="QR.html">QR<br>Personalizado</a></li>
+                <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+            <div class="container-login">
+                <img src="Images/LogoUser.png" alt="LogoUser">
+                <button class="loginbutton">INICIAR SESIÓN</button>
+            </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="header">
+                <h1>Cartilla médica de tu mascota</h1>
+            </div>
+            <div class="container">
+                <div class="image-box">
+                    Añadir imagen<br>+
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img src="" alt="">
+                </div>
+                <div class="image-box">
+                    Añadir imagen<br>+
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img src="" alt="">
+                </div>
+                <div class="image-box">
+                    Añadir imagen<br>+
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img src="" alt="">
+                </div>
+                <div class="image-box">
+                    Añadir imagen<br>+
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img src="" alt="">
+                </div>
+                <div class="back-button">
+                    <button onclick="goBack()">Retroceder</button>
+                </div>
+            </div>
+        </main>
+       
+        <footer>
+            <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+            <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+        </footer> 
+    </body>
+</html>

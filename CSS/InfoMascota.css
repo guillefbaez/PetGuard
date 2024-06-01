@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: white;
+}
+
+header{
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #80BFFF;
+}
+
+/*Estilo NavBar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+/*Fin NavBar*/
+
+/*Estilo Logo PetGuard*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+/*Fin Logo PetGuard*/
+
+/*Estilo Menu*/
+.menu{
+    font-family: Inter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Cambia el color según tu preferencia */
+    transition: 0.3s ease;
+    transform: translateY(5px); /* Ajusta la posición vertical del subrayado */
+}
+/*Fin Menu*/
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/*Fin Pie de Pagina*/
+/*Estilo Boton de Inicio de Sesión*/
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.loginbutton{
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*Fin Boton de Inicio de Sesión*/
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-left: 200px;
+}
+.container h1 {
+    background-color: #F60;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-section {
+    display: flex;
+    justify-content: space-between;
+}
+.left-section, .right-section {
+    width: 48%;
+}
+.left-section {
+    text-align: center;
+}
+.left-section .form-group {
+    margin-bottom: 20px;
+}
+.left-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+.left-section input[type="file"] {
+    display: none;
+}
+.left-section .file-label {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.left-section .file-label img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    display: none;
+}
+.left-section .file-label span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.left-section .buttons {
+    margin-top: 20px;
+}
+.left-section .buttons .button-group {
+    display: block;
+    justify-content: space-between;
+}
+.left-section .buttons button,
+.left-section .buttons input[type="submit"] {
+    background-color: #F60;
+    color: white;
+    border: none;
+    font-family: Inter;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.left-section .buttons button:hover,
+.left-section .buttons input[type="submit"]:hover {
+    background-color: #F60;
+}
+.right-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.right-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+.right-section input,
+.right-section textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.right-section .form-pair {
+    display: flex;
+    justify-content: space-between;
+}
+.right-section .form-pair .form-group {
+    width: 48%;
+}
+.file-label {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+#caracteristicas {
+    height: 150px;
+    width: 364px;
+}

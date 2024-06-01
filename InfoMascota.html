@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuard</title>
+    <script src="JS/InfoMascota.js" defer></script>
+    <link rel="stylesheet" href="CSS/InfoMascota.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"> <a href="Inicio.html"><img src="Images/LogoPetGuard.jpg" alt="LogoPetGuard"></a></div>
+            <ul class="menu">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="InfoMascota.html">InfoMascota</a></li>
+                <li><a href="QR.html">QR<br>Personalizado</a></li>
+                <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+            <div class="container-login">
+                <img src="Images/LogoUser.png" alt="LogoUser">
+                <button class="loginbutton">INICIAR SESIÓN</button>
+            </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1>¡Genera tu QR llenando la siguiente información de tu mascota!</h1>
+            <div class="form-section">
+                <div class="left-section">
+                    <div class="form-group">
+                        <label for="imagen">Imagen de mi mascota:</label>
+                        <label for="imagen" class="file-label" id="file-label">
+                            <span id="file-label-text">Añadir imagen<br><br>+</span>
+                            <img id="image-preview" src="#" alt="Vista previa" style="display: none;">
+                        </label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*">
+                    </div>
+                    <div class="buttons">
+                        <div class="button-group">
+                            <button type="button" onclick="InfoDueño()">Info Dueño</button>
+                            <button type="button" onclick="HistorialMedico()">Historial Médico</button>
+                        </div><br>
+                        <input type="submit" onclick="QR()" value="GENERAR QR">
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="form-pair">
+                        <div class="form-group">
+                            <label for="tipo-animal">Tipo de animal:</label>
+                            <input type="text" id="tipo-animal" name="tipo-animal">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                    </div>
+                    <div class="form-pair">
+                        <div class="form-group">
+                            <label for="raza">Raza:</label>
+                            <input type="text" id="raza" name="raza">
+                        </div>
+                        <div class="form-group">
+                            <label for="sexo">Sexo:</label>
+                            <input type="text" id="sexo" name="sexo">
+                        </div>
+                    </div>
+                    <div class="form-pair">
+                        <div class="form-group">
+                            <label for="edad">Edad:</label>
+                            <input type="text" id="edad" name="edad">
+                        </div>
+                        <div class="form-group">
+                            <label for="tamano">Tamaño:</label>
+                            <input type="text" id="tamano" name="tamano">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="caracteristicas">Añadir características adicionales:</label>
+                        <textarea id="caracteristicas" name="caracteristicas"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+            <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+        </footer> 
+    </body>
+</html>

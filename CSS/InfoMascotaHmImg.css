@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: white;
+}
+
+header{
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #80BFFF;
+}
+
+/*Estilo NavBar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+/*Fin NavBar*/
+
+/*Estilo Logo PetGuard*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+/*Fin Logo PetGuard*/
+
+/*Estilo Menu*/
+.menu{
+    font-family: Inter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Cambia el color según tu preferencia */
+    transition: 0.3s ease;
+    transform: translateY(5px); /* Ajusta la posición vertical del subrayado */
+}
+/*Fin Menu*/
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/*Fin Pie de Pagina*/
+/*Estilo Boton de Inicio de Sesión*/
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.loginbutton{
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*Fin Boton de Inicio de Sesión*/
+
+.container{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.container-title{
+    background-color: #F60;
+    width: 500px;
+    height: 70px;
+    margin-left: 350px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-container p {
+    position: absolute;
+    margin: 0;
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}

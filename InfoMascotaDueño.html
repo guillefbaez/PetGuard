@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuard</title>
+    <script src="JS/InfoMascota.js" defer></script>
+    <link rel="stylesheet" href="CSS/InfoMascotaDueño.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"> <a href="Inicio.html"><img src="Images/LogoPetGuard.jpg" alt="LogoPetGuard"></a></div>
+            <ul class="menu">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="InfoMascota.html">InfoMascota</a></li>
+                <li><a href="QR.html">QR<br>Personalizado</a></li>
+                <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+            <div class="container-login">
+                <img src="Images/LogoUser.png" alt="LogoUser">
+                <button class="loginbutton">INICIAR SESIÓN</button>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="owner-section" class="container">
+                <h1>¡Ingresa la información del dueño!</h1>
+                <div class="form-section">
+                    <div class="owner-section">
+                        <div class="form-pair">
+                            <div class="form-group">
+                                <label for="nombre-dueno">Nombre del dueño:</label>
+                                <input type="text" id="nombre-dueno" name="nombre-dueno">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo:</label>
+                                <input type="email" id="correo" name="correo">
+                            </div>
+                        </div>
+                        <div class="form-pair">
+                            <div class="form-group">
+                                <label for="dueno-adicional">Dueño Adicional:</label>
+                                <input type="text" id="dueno-adicional" name="dueno-adicional">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Número Telefónico:</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
+                        </div>
+                        <div class="form-pair">
+                            <div class="form-group">
+                                <label for="estado">Estado:</label>
+                                <input type="text" id="estado" name="estado">
+                            </div>
+                            <div class="form-group">
+                                <label for="municipio">Municipio:</label>
+                                <input type="text" id="municipio" name="municipio">
+                            </div>
+                        </div>
+                        <div class="form-pair">
+                            <div class="form-group">
+                                <label for="colonia">Colonia:</label>
+                                <input type="text" id="colonia" name="colonia">
+                            </div>
+                            <div class="form-group">
+                                <label for="calle">Calle y número de casa:</label>
+                                <input type="text" id="calle" name="calle">
+                            </div>
+                        </div>
+                        <div class="form-pair">
+                            <div class="form-group">
+                                <label for="codigo-postal">Código Postal:</label>
+                                <input type="text" id="codigo-postal" name="codigo-postal">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono-adicional">Número Telefónico Adicional:</label>
+                                <input type="tel" id="telefono-adicional" name="telefono-adicional">
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" onclick="goBack()">Regresar</button>
+                        </div>
+                    </div>
+                    <div class="image-section">
+                        <img src="Images/BannerCuidaMiMascota.jpg" alt="CuidaMiMascota">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+            <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+        </footer> 
+    </body>
+</html>

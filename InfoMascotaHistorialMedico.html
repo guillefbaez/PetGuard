@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetGuard</title>
-    <link rel="stylesheet" href="CSS/Ayuda.css">
+    <script src="JS/HistorialMedico.js" defer></script>
+    <link rel="stylesheet" href="CSS/InfoMascotaHistorialMedico.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -26,36 +27,25 @@
             </div>
             </nav>
         </header>
-    <main>
-        <form action="#">
-            <div class="campo1">
-                <label for="nombre">Nombre(s)</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <main>
+            <div class="container-HM">
+                <div class="buttons">
+                    <h1>¡Información médica de tu mascota!</h1>
+                    <button class="button" onclick="CartillaMedica()">Cartilla Médica</button>
+                    <button class="button" onclick="HistorialMedico()">Historial Médico</button>
+                </div>
+                <button class="more-info" onclick="MasInfo()">Mas información</button>
+                <div class="pet-info">
+                    <h2>Mi mascota:</h2>
+                    <img src="Images/Hachiko.jpg" alt="Hachiko" class="pet-image">
+                </div>
+                <button class="info-mascota" onclick="goBack()">InfoMascota</button>
             </div>
-           
-            <div class="campo1">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-            </div>
-            
-            <div class="campo2">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-        
-            <div class="campo2">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-        
-            <button class="enviar" type="submit">Enviar</button>
-            </form>
-    </main>
-        
-    <footer>
-        <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
-        <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
-    </footer>
+        </main>
+       
+        <footer>
+            <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+            <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+        </footer> 
     </body>
 </html>
-
