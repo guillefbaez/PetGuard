@@ -1,19 +1,23 @@
 let currentCollarIndex = 0;
+const collars = document.querySelectorAll('.collar');
 
 function changeCollar(direction) {
-    // Obtén todas las imágenes de collares
-    const collars = document.querySelectorAll('.collar');
-
-    // Oculta la imagen actual
     collars[currentCollarIndex].classList.remove('collar-active');
-
-    // Calcula el nuevo índice basado en la dirección
     if (direction === 'left') {
-        currentCollarIndex = (currentCollarIndex - 1 + collars.length) % collars.length;
+        currentCollarIndex = (currentCollarIndex === 0) ? collars.length - 1 : currentCollarIndex - 1;
     } else if (direction === 'right') {
-        currentCollarIndex = (currentCollarIndex + 1) % collars.length;
+        currentCollarIndex = (currentCollarIndex === collars.length - 1) ? 0 : currentCollarIndex + 1;
     }
-
-    // Muestra la nueva imagen
     collars[currentCollarIndex].classList.add('collar-active');
+}
+
+function selectCollar(index) {
+    collars[currentCollarIndex].classList.remove('collar-active');
+    currentCollarIndex = index;
+    collars[currentCollarIndex].classList.add('collar-active');
+}
+
+function orderCollar() {
+    alert(`Has seleccionado el collar ${currentCollarIndex + 1}`);
+    window.location.href = 'SeccionEnvio.html';
 }

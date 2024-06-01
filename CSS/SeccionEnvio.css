@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: white;
+}
+
+header{
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #80BFFF;
+}
+
+/*Estilo NavBar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+/*Fin NavBar*/
+
+/*Estilo Logo PetGuard*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+/*Fin Logo PetGuard*/
+
+/*Estilo Menu*/
+.menu{
+    font-family: Inter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Cambia el color según tu preferencia */
+    transition: 0.3s ease;
+    transform: translateY(5px); /* Ajusta la posición vertical del subrayado */
+}
+/*Fin Menu*/
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/*Fin Pie de Pagina*/
+/*Estilo Boton de Inicio de Sesión*/
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.loginbutton{
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #F60;
+    fill: #F60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*Fin Boton de Inicio de Sesión*/
+
+.container {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  color: white;
+  background-color: #F60;
+  margin-top: 20px;
+  width: 700px;
+  height: 60px;
+}
+
+.collar-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-display {
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  height: 200px;
+  width: 225px;
+  margin-left: 225px;
+  margin-top: 30px;
+
+}
+
+.image-display img {
+  max-width: 200px;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn-cancel {
+  color: white;
+  font-family: Inter;
+  font-weight: bold;
+  background-color: #F60;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 25px ;
+  margin-top: 25px;
+
+}
+.btn-compra {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px ;
+}
+.btn-compra img{
+  height: 100px;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+

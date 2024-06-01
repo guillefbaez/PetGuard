@@ -28,7 +28,7 @@ function HistorialMedico(){
 }
 
 function QR() {
-    window.location.href = '#.html';
+    window.location.href = 'InfoMascotaHmQr.html';
 }
 
 function goBack() {

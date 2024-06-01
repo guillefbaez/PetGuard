@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetGuard</title>
-    <link rel="stylesheet" href="CSS/Ayuda.css">
-    <script src="JS/Ayuda.js" defer></script>
+    <script src="JS/Qr-Code.js" defer></script>
+    <link rel="stylesheet" href="CSS/InfoMascotaHmQr.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -27,36 +27,22 @@
             </div>
             </nav>
         </header>
-    <main>
-        <form action="#">
-            <div class="campo1">
-                <label for="nombre">Nombre(s)</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <main>
+            <div class="containerQR">
+                <div class="title">
+                    <h1>¡Escanea el código QR para ver la <br> información de tu mascota!</h1>
+                </div>
+                <div class="qr-code">
+                    <img src="Images/LogoQR.jpg" alt="qr-code" class="qrcode">
+                    <p>QR de Hachiko</p>
+                </div>
+                <button onclick="goBack()">Regresar</button>
             </div>
-           
-            <div class="campo1">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-            </div>
-            
-            <div class="campo2">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-        
-            <div class="campo2">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-        
-            <button class="enviar" type="submit" onclick="Enviar()">Enviar</button>
-            </form>
-    </main>
-        
-    <footer>
-        <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
-        <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
-    </footer>
+        </main>
+       
+        <footer>
+            <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
+            <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
+        </footer> 
     </body>
 </html>
-

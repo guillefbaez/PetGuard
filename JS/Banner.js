@@ -14,3 +14,7 @@ function changeBanner(direction) {
     banners[currentBannerIndex].classList.add('banner-active');
     banners[currentBannerIndex].classList.remove('banner');
 }
+
+function mostrarLogin(){
+    window.location.href = 'Login.html';
+}

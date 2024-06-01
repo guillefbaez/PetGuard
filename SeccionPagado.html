@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetGuard</title>
-    <link rel="stylesheet" href="CSS/Ayuda.css">
-    <script src="JS/Ayuda.js" defer></script>
+    <link rel="stylesheet" href="CSS/SeccionPagado.css">
+    <script src="JS/SeccionPagado.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -27,32 +27,20 @@
             </div>
             </nav>
         </header>
-    <main>
-        <form action="#">
-            <div class="campo1">
-                <label for="nombre">Nombre(s)</label>
-                <input type="text" id="nombre" name="nombre" required>
+       
+        <main>
+            <div class="payment-container">
+                <h1>¡Excelente!</h1>
+                <img src="Images/BannerPedido.png" class="CompraHecha">
+                <div class="aviso">
+                    <p>Tu compra fue realizado con éxito.</p>
+                </div>
+                    <div class="buttons">
+                        <button class="btn-cancel" type="button" onclick="cancel()">Cancelar</button>
+                    </div>
             </div>
-           
-            <div class="campo1">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-            </div>
-            
-            <div class="campo2">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
-        
-            <div class="campo2">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-        
-            <button class="enviar" type="submit" onclick="Enviar()">Enviar</button>
-            </form>
-    </main>
-        
+        </main>
+
     <footer>
         <p>&copy; 2024 PetGuard. Todos los derechos reservados.</p>
         <p>&copy; Página realizada por: Guillermo Vladimir Flores Báez - 2127967 - ITS.</p>
